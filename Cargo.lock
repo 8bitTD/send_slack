@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "slack"
+name = "send_slack"
 version = "0.1.0"
