@@ -8,6 +8,6 @@ pub fn send_slack(tkn:&str, cnl:&str, usr:&str, msg:&str) -> std::io::Result<()>
     cmd = cmd + &cnl + " -d text=";
     cmd = cmd + &encode(&msg) + " -d username=" + &usr + " -d icon_url=icon_emoji ";
     cmd = cmd + "https://slack.com/api/chat.postMessage";
-    let res = std::process::Command::new("cmd.exe").creation_flags(CREATE_NO_WINDOW).args(&["/C", &cmd]).output().expect("failed to execute process");
+    let _res = std::process::Command::new("cmd.exe").creation_flags(CREATE_NO_WINDOW).args(&["/C", &cmd]).output().expect("failed to execute process");
     Ok(())
 }
