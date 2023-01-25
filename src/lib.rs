@@ -1,3 +1,4 @@
+use urlencoding::encode;
 use std::os::windows::process::CommandExt;
 const CREATE_NO_WINDOW: u32 = 0x08000000;
 pub fn send_slack(tkn:&str, cnl:&str, usr:&str, msg:&str) -> std::io::Result<()> {
