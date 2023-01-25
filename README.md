@@ -1,12 +1,7 @@
-# slack
+# send_slack
 Send a message to slack
 Works in windows10 environment
-## Cargo.toml
-```
-[dependencies]
-slack = { git = "https://github.com/8bitTD/slack", branch = "main" }
-```
-## main.rs
+
 ```
 use slack;
 fn main() {
